@@ -1,11 +1,11 @@
 import { ChatMessage, Message } from "@/components/chat-message";
 import { faker } from "@faker-js/faker";
-import { LegendList } from "@legendapp/list/keyboard-controller";
+import { LegendList } from "@legendapp/list";
 import { useState } from "react";
 
-export default function KeyboardAlignEnd() {
+export default function AlignEnd() {
   const [messages] = useState<Message[]>(() =>
-    Array.from({ length: 50 }).map((_, i) => ({
+    Array.from({ length: 20 }).map((_, i) => ({
       id: faker.string.uuid(),
       role: i % 2 === 0 ? "user" : "assistant",
       parts: [

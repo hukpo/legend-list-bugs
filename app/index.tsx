@@ -26,6 +26,10 @@ export default function Index() {
       <Link href="/keyboard-controller-alignItemsAtEnd" asChild>
         <Button title="keyboard-controller-alignItemsAtEnd" />
       </Link>
+
+      <Link href="/alignItemsAtEnd" asChild>
+        <Button title="alignItemsAtEnd" />
+      </Link>
     </View>
   );
 }

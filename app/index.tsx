@@ -18,6 +18,10 @@ export default function Index() {
       <Link href="/gap-extra-padding" asChild>
         <Button title="gap-extra-padding" />
       </Link>
+
+      <Link href="/keyboard-controller-padding" asChild>
+        <Button title="keyboard-controller-padding" />
+      </Link>
     </View>
   );
 }

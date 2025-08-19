@@ -8,10 +8,15 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        gap: 20,
       }}
     >
       <Link href="/initialScrollIndex" asChild>
         <Button title="initialScrollIndex" />
+      </Link>
+
+      <Link href="/gap-extra-padding" asChild>
+        <Button title="gap-extra-padding" />
       </Link>
     </View>
   );

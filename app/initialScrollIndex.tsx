@@ -1,14 +1,16 @@
-import { Chat, ChatMessage } from "@/components/chat";
+import { ChatMessage, Message } from "@/components/chat-message";
+import { LegendList } from "@legendapp/list";
 import { useState } from "react";
 
-export default function Index() {
-  const [messages] = useState<ChatMessage[]>([]);
+export default function InitialScrollIndex() {
+  const [messages] = useState<Message[]>([]);
 
   return (
-    <Chat
+    <LegendList
       data={messages}
       initialScrollIndex={messages.length - 1}
       keyExtractor={(item) => item.id}
+      renderItem={({ item }) => <ChatMessage message={item} />}
     />
   );
 }
